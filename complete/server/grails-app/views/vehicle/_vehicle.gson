@@ -1,0 +1,23 @@
+import demo.Vehicle
+
+model {
+    Vehicle vehicle
+}
+json {
+    id vehicle.id
+
+    name vehicle.name
+
+	driver name: vehicle.driver.name,
+        id: vehicle.driver.id
+
+    licence licenceclass: vehicle.licence.licence_class,
+			licenceno: vehicle.licence.licence_no,
+        id: vehicle.licence.id
+
+    bid biddate: vehicle.bid.date,
+		bidamount: vehicle.bid.amount,
+            id: vehicle.bid.id
+
+    
+}

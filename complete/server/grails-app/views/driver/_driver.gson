@@ -1,0 +1,20 @@
+import demo.Driver
+
+model {
+    Driver driver
+}
+json {
+    id driver.id
+
+    name driver.name
+
+    licence licenceclass: driver.licence.licence_class,
+			licenceno: driver.licence.licence_no,
+        id: driver.licence.id
+
+    bid biddate: driver.bid.date,
+		bidamount: driver.bid.amount,
+            id: driver.bid.id
+
+    
+}
