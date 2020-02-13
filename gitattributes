@@ -1,4 +1,2 @@
 *.css linguist-detectable=false
-*.vue linguist-detectable=false
-*.groovy linguist-detectable=false
 *.js linguist-detectable=true
